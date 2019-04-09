@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.textViewDidChangeSelection(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.selectedRange">
+            </PersistentString>
+            <PersistentString
+               value = "textView.text.count">
+            </PersistentString>
+            <PersistentString
+               value = "textView.selectedRange.lowerBound">
+            </PersistentString>
+            <PersistentString
+               value = "textView.text.count - lastCommand.count - 1">
+            </PersistentString>
+            <PersistentString
+               value = "textView.selectedRange.location">
+            </PersistentString>
+            <PersistentString
+               value = "textView.text">
+            </PersistentString>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.textViewDidChange(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.text.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.append(toTextView:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHGatewayImplementation.configureSession():SSHGateway.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "session">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHPresenter.replaceSubrange():SSHPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "lastCommand.count">
+            </PersistentString>
+            <PersistentString
+               value = "subRange">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.lastCommand.didset:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHViewController.canPerformAction(_:withSender:):SSHViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(action == #selector(select))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHPresenter.shouldChangeTextIn(_:):SSHPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHInputTableViewCell.textViewDidChange(_:):SSHInputTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.text">
+            </PersistentString>
+            <PersistentString
+               value = "delegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.textView(_:shouldChangeTextIn:replacementText:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.text.count">
+            </PersistentString>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "textView.selectedRange.location">
+            </PersistentString>
+            <PersistentString
+               value = "textView.selectedRange.length">
+            </PersistentString>
+            <PersistentString
+               value = "range">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.performCommand():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "self.lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "password">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHViewController.textViewDidChangeSelection(_:):SSHViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "range">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SSHGatewayImplementation.connect(toHost:withUsername:byPassword:handler:):SSHGateway.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self?.session?.isConnected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.connect(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.password">
+            </PersistentString>
+            <PersistentString
+               value = "self.session?.isAuthorized">
+            </PersistentString>
+            <PersistentString
+               value = "self.host">
+            </PersistentString>
+            <PersistentString
+               value = "self.username">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHPresenter.replaceSubrange(allText:range:):SSHPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastCommand.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

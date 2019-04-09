@@ -1,0 +1,6 @@
+framework module Signals {
+  umbrella header "BlueSignals-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_NMSSHProject {
+  umbrella header "Pods-NMSSHProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
