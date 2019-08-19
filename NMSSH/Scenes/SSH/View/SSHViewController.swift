@@ -8,15 +8,14 @@
 
 
 import UIKit
-import IQKeyboardManagerSwift
-import Signals
 
 class SSHViewController: UIViewController {
     
     // MARK: - Outlets
     
     @IBOutlet weak var textView: UITextView!
-    
+    @IBOutlet weak var textField: UITextField!
+
     // MARK: - Properties
     
     var presenter: SSHPresenter!
@@ -25,44 +24,28 @@ class SSHViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView.smartDashesType = .no
-        let gateway = SSHGatewayImplementation()
-        presenter = SSHPresenter(view: self, gateway: gateway)
-        gateway.sessionDelegate = presenter
+        presenter.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        IQKeyboardManager.shared.enable = true
-    }
-    
-    // MARK: - Interactors
-    
-    @IBAction func connect(_ sender: Any) {
-        presenter.connect(toHost: presenter.host, withUsername: presenter.username, byPassword: presenter.password)
+//        IQKeyboardManager.shared.enable = true
     }
 }
 
-// MARK: - TextView Delegate
+// MARK: - TextView Helper
 
-extension SSHViewController: UITextViewDelegate {
+extension SSHViewController {
     
-    func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
-        textView.resignFirstResponder()
+    func changeContentInsetOfTextView() {
+        var inset: UIEdgeInsets = .zero
+        inset.top = textView.bounds.size.height - textView.contentSize.height
+        textView.contentInset = inset
+        textView.scrollToBotom()
     }
-    
+
     func append(toTextView text: String?) {
         textView.text = "\(textView.text ?? "")\(text ?? "")"
-    }
-    
-    func textViewDidChangeSelection(_ textView: UITextView) {
-        guard let selectedRange = presenter.textViewSelectedRange(textView.text, selectedRange: textView.selectedRange) else { return }
-        textView.selectedRange = selectedRange
-    }
-
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        let length = textView.text?.utf8.count
-        return presenter.shouldChangeTextIn(text, textViewLength: length, range: range)
     }
 }
 
@@ -70,9 +53,27 @@ extension SSHViewController: UITextViewDelegate {
 
 extension SSHViewController: SSHPresentation {
     
+    func configure() {
+        textField.isHidden = true
+        textField.delegate = self
+        textField.tintColor = .clear
+    }
+    
+    func clearText() {
+        textField.text = nil
+    }
+    
+    func drop() {
+        DispatchQueue.main.async(execute: {
+            self.textView.text.removeLast()
+        })
+    }
+    
     func append(text: String) {
         DispatchQueue.main.async(execute: {
+            self.textField.becomeFirstResponder()
             self.append(toTextView: text)
+            self.changeContentInsetOfTextView()
         })
     }
     
@@ -82,9 +83,28 @@ extension SSHViewController: SSHPresentation {
         })
     }
 
-    func setTextViewEditable(isEditable: Bool) {
+    func setTextFieldEnabled(isEnabled: Bool) {
         DispatchQueue.main.async(execute: {
-            self.textView.isEditable = isEditable
+            self.textField.isEnabled = isEnabled
+            self.textField.resignFirstResponder()
         })
     }
+}
+
+
+extension SSHViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        return presenter.shouldChangeTextIn(string)
+    }
+    
+    
+}
+
+extension UITextView {
+    
+    func scrollToBotom() {
+        let range = NSMakeRange(text.utf8.count - 1, 1);
+        scrollRangeToVisible(range);
+    }
+    
 }

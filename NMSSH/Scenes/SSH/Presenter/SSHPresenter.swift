@@ -10,36 +10,40 @@ import Foundation
 
 protocol SSHPresenterInput {
     func performCommand(after text: String)
-    func replaceSubrange()
-    func shouldChangeTextIn(_ text: String, textViewLength: Int?, range: NSRange) -> Bool
-    func textViewSelectedRange(_ text: String, selectedRange: NSRange) -> NSRange?
+    func shouldChangeTextIn(_ string: String) -> Bool
+    func viewDidLoad()
 }
 
-protocol SSHPresentation: class {
+protocol SSHPresentation: ViewDisplayable {
     func append(text: String)
+    func drop()
+    func clearText()
     func replace(text: String)
-    func setTextViewEditable(isEditable: Bool)
+    func setTextFieldEnabled(isEnabled: Bool)
+    func configure()
 }
 
 final class SSHPresenter {
     
     // MARK: - Properties
     
-    private weak var view: SSHPresentation!
-    var host: String = "13.78.148.225"
-    var username: String = "hala95"
-    var password: String = "hala95!"
+    private weak var view: SSHPresentation?
     private let gateway: SSHGateway
     var lastCommand = ""
     private var textViewLength = 0
     private var range = NSRange()
-//
+    private var connectionModel: ConnectionModel
+    
+    //
     // MARK: - Init / Deinit
     
     init(view: SSHPresentation,
-         gateway: SSHGateway) {
+         gateway: SSHGateway,
+         connectionModel: ConnectionModel) {
         self.view = view
         self.gateway = gateway
+        self.connectionModel = connectionModel
+        self.view?.displayView(title: connectionModel.address)
     }
 }
 
@@ -47,47 +51,28 @@ final class SSHPresenter {
 
 extension SSHPresenter: SSHPresenterInput {
     
-    func textViewSelectedRange(_ text: String, selectedRange: NSRange) -> NSRange? {
-        if selectedRange.location < text.utf16.count - lastCommand.count {
-            return NSRange(location: text.utf16.count, length: 0)
-        }
-        return nil
+    func viewDidLoad() {
+        view?.configure()
+        connect()
     }
     
-    func shouldChangeTextIn(_ text: String, textViewLength: Int?, range: NSRange) -> Bool {
-        if let length = textViewLength { self.textViewLength = length }
-        self.range = range
+    func shouldChangeTextIn(_ string: String) -> Bool {
         
-        if text.isEmpty {
-            if lastCommand.count > 0 {
-                replaceSubrange()
-                return true
-            } else {
-                return false
-            }
+        if string == "" , !lastCommand.isEmpty {
+            view?.drop()
+        } else {
+            view?.append(text: string)
         }
         
-        lastCommand += text
-        performCommand(after: text)
+        lastCommand += string
+        performCommand(after: string)
         return true
-    }
-    
-    func replaceSubrange() {
-        let range = NSRange(location: lastCommand.utf8.count - 1, length: 1)
-        guard let subRange = Range<String.Index>(range, in: lastCommand) else { return }
-        lastCommand.replaceSubrange(subRange, with: "")
-        
-//        let offset = range.location - (textViewLength - lastCommand.count)
-//        if let index = lastCommand.index(lastCommand.startIndex,
-//                                         offsetBy: offset,
-//                                         limitedBy: lastCommand.endIndex) {
-//            lastCommand.remove(at: index)
-//        }
     }
     
     func performCommand(after text: String) {
         let returnText = "\n"
         guard text == returnText else { return }
+        view?.clearText()
         write()
     }
     
@@ -103,21 +88,20 @@ extension SSHPresenter {
         }
     }
     
-    func connect(toHost: String, withUsername: String, byPassword: String) {
-        gateway.connect(toHost: toHost, withUsername: withUsername, byPassword: byPassword) { [weak self] result in
+    func connect() {
+        gateway.connect(toHost: connectionModel.host, withUsername: connectionModel.username, byPassword: connectionModel.password) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success:
-                self.view.setTextViewEditable(isEditable: true)
-                self.view.append(text: "ssh \(self.username)@\(self.host)\n")
+                self.view?.setTextFieldEnabled(isEnabled: true)
+                self.view?.append(text: "ssh \(self.connectionModel.username)@\(self.connectionModel.host)\n")
             case let .failure(error):
-                self.view.setTextViewEditable(isEditable: false)
-                self.view.append(text: error.localizedDescription)
+                self.view?.setTextFieldEnabled(isEnabled: false)
+                self.view?.append(text: error.localizedDescription)
             }
         }
     }
 }
-
 
 // MARK: - SSH Session Delegate
 
@@ -125,22 +109,22 @@ extension SSHPresenter: SSHSessionDelegate {
     func channel(didReadData message: String) {
         let clearText = "clear"
         if message.prefix(clearText.count) == clearText {
-            view.replace(text: message)
+            view?.replace(text: message)
         }
-        view.append(text: message)
+        view?.append(text: message)
     }
     
     func channel(didReadError error: String) {
-        view.append(text: "[ERROR] \(error)")
+        view?.append(text: "[ERROR] \(error)")
     }
     
     func session(didDisconnectWithError error: Error) {
-        view.append(text: "\nDisconnected with error: \(error.localizedDescription)")
-        view.setTextViewEditable(isEditable: false)
+        view?.append(text: "\nDisconnected with error: \(error.localizedDescription)")
+        view?.setTextFieldEnabled(isEnabled: false)
     }
     
     func channelShellDidClose() {
-        view.append(text: "\nShell closed\n")
-        view.setTextViewEditable(isEditable: false)
+        view?.append(text: "\nShell closed\n")
+        view?.setTextFieldEnabled(isEnabled: false)
     }
 }

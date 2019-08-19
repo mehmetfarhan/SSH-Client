@@ -6,16 +6,10 @@
          contextName = "ViewController.textViewDidChangeSelection(_:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "textView.selectedRange">
-            </PersistentString>
-            <PersistentString
                value = "textView.text.count">
             </PersistentString>
             <PersistentString
                value = "textView.selectedRange.lowerBound">
-            </PersistentString>
-            <PersistentString
-               value = "textView.text.count - lastCommand.count - 1">
             </PersistentString>
             <PersistentString
                value = "textView.selectedRange.location">
@@ -24,7 +18,21 @@
                value = "textView.text">
             </PersistentString>
             <PersistentString
+               value = "textView.selectedRange">
+            </PersistentString>
+            <PersistentString
                value = "lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "textView.text.count - lastCommand.count - 1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SSHPresenter.connect():SSHPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -37,10 +45,16 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.append(toTextView:):ViewController.swift">
+         contextName = "SSHPresenter.replaceSubrange():SSHPresenter.swift">
          <PersistentStrings>
             <PersistentString
-               value = "textView.text">
+               value = "lastCommand.count">
+            </PersistentString>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "subRange">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -53,16 +67,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "SSHPresenter.replaceSubrange():SSHPresenter.swift">
+         contextName = "ViewController.append(toTextView:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "lastCommand">
-            </PersistentString>
-            <PersistentString
-               value = "lastCommand.count">
-            </PersistentString>
-            <PersistentString
-               value = "subRange">
+               value = "textView.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -102,6 +110,34 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in ViewController.performCommand():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "lastCommand">
+            </PersistentString>
+            <PersistentString
+               value = "password">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHViewController.textViewDidChangeSelection(_:):SSHViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "range">
+            </PersistentString>
+            <PersistentString
+               value = "presenter.textViewSelectedRange(textView.text, selectedRange: textView.selectedRange)">
+            </PersistentString>
+            <PersistentString
+               value = "textView.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.textView(_:shouldChangeTextIn:replacementText:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -122,24 +158,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ViewController.performCommand():ViewController.swift">
+         contextName = "SSHPresenter.shouldChangeTextIn(_:textViewLength:range:):SSHPresenter.swift">
          <PersistentStrings>
             <PersistentString
                value = "lastCommand">
-            </PersistentString>
-            <PersistentString
-               value = "self.lastCommand">
-            </PersistentString>
-            <PersistentString
-               value = "password">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SSHViewController.textViewDidChangeSelection(_:):SSHViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "range">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -173,6 +195,22 @@
          <PersistentStrings>
             <PersistentString
                value = "lastCommand.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHPresenter.channel(didReadData:):SSHPresenter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SSHViewController.textField(_:shouldChangeCharactersIn:replacementString:):SSHViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textField.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

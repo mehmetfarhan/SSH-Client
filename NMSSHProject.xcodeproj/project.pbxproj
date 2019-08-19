@@ -9,27 +9,75 @@
 /* Begin PBXBuildFile section */
 		19634FF62254B0B4008220A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19634FF52254B0B4008220A8 /* AppDelegate.swift */; };
 		19634FF82254B0B4008220A8 /* SSHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19634FF72254B0B4008220A8 /* SSHViewController.swift */; };
-		19634FFB2254B0B4008220A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19634FF92254B0B4008220A8 /* Main.storyboard */; };
+		19634FFB2254B0B4008220A8 /* SSH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19634FF92254B0B4008220A8 /* SSH.storyboard */; };
 		19634FFD2254B0B6008220A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19634FFC2254B0B6008220A8 /* Assets.xcassets */; };
 		196350302259F8A4008220A8 /* SSHPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963502F2259F8A4008220A8 /* SSHPresenter.swift */; };
 		1963503D225A4662008220A8 /* SSHGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963503C225A4662008220A8 /* SSHGateway.swift */; };
 		19635041225CA029008220A8 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635040225CA029008220A8 /* SSHError.swift */; };
 		19635044225CA043008220A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635043225CA043008220A8 /* Result.swift */; };
+		1963504F225E2E73008220A8 /* NMSSHProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963504E225E2E73008220A8 /* NMSSHProjectTests.swift */; };
+		19635058225E2F26008220A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635057225E2F26008220A8 /* Result.swift */; };
+		1963505A225E2F6F008220A8 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635059225E2F6F008220A8 /* NSError.swift */; };
+		19635081226472C6008220A8 /* TabViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635074226472C6008220A8 /* TabViewContainerViewController.swift */; };
+		19635082226472C6008220A8 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635075226472C6008220A8 /* TabViewController.swift */; };
+		19635083226472C6008220A8 /* TabViewTabCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635078226472C6008220A8 /* TabViewTabCollectionView.swift */; };
+		19635084226472C6008220A8 /* TabViewTabCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635079226472C6008220A8 /* TabViewTabCollectionViewLayout.swift */; };
+		19635085226472C6008220A8 /* NSLayoutConstraint+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507B226472C6008220A8 /* NSLayoutConstraint+Custom.swift */; };
+		19635086226472C6008220A8 /* UIBarButtonItem+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507C226472C6008220A8 /* UIBarButtonItem+View.swift */; };
+		19635087226472C6008220A8 /* NavigationItemObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507E226472C6008220A8 /* NavigationItemObserver.swift */; };
+		19635088226472C6008220A8 /* TabViewBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507F226472C6008220A8 /* TabViewBar.swift */; };
+		19635089226472C6008220A8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635080226472C6008220A8 /* Theme.swift */; };
+		1963508B2264734D008220A8 /* SSHTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963508A2264734D008220A8 /* SSHTabs.swift */; };
+		1963508E22647B4E008220A8 /* ViewControllersAssembly+SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963508D22647B4E008220A8 /* ViewControllersAssembly+SSH.swift */; };
+		1963509022647B7B008220A8 /* ViewControllersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963508F22647B7B008220A8 /* ViewControllersAssembly.swift */; };
+		1963509322647BCF008220A8 /* StoryboardInitiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963509222647BCF008220A8 /* StoryboardInitiable.swift */; };
+		1963509622647DBE008220A8 /* ConnectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963509522647DBE008220A8 /* ConnectionModel.swift */; };
+		1963509822648188008220A8 /* ViewDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963509722648188008220A8 /* ViewDisplayable.swift */; };
 		1B31B9D358A5A821CF5A7899 /* Pods_NMSSHProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4716229B2D709B9969218FF1 /* Pods_NMSSHProject.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19635051225E2E73008220A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19634FEA2254B0B4008220A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19634FF12254B0B4008220A8;
+			remoteInfo = NMSSHProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		021D5E3B4922373246E85D82 /* Pods-NMSSH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMSSH.debug.xcconfig"; path = "Target Support Files/Pods-NMSSH/Pods-NMSSH.debug.xcconfig"; sourceTree = "<group>"; };
 		19634FF22254B0B4008220A8 /* NMSSHProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMSSHProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19634FF52254B0B4008220A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19634FF72254B0B4008220A8 /* SSHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHViewController.swift; sourceTree = "<group>"; };
-		19634FFA2254B0B4008220A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19634FFA2254B0B4008220A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SSH.storyboard; sourceTree = "<group>"; };
 		19634FFC2254B0B6008220A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		196350012254B0B6008220A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1963502F2259F8A4008220A8 /* SSHPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHPresenter.swift; sourceTree = "<group>"; };
 		1963503C225A4662008220A8 /* SSHGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHGateway.swift; sourceTree = "<group>"; };
 		19635040225CA029008220A8 /* SSHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHError.swift; sourceTree = "<group>"; };
 		19635043225CA043008220A8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		1963504C225E2E73008220A8 /* NMSSHProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMSSHProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1963504E225E2E73008220A8 /* NMSSHProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMSSHProjectTests.swift; sourceTree = "<group>"; };
+		19635050225E2E73008220A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19635057225E2F26008220A8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		19635059225E2F6F008220A8 /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		19635074226472C6008220A8 /* TabViewContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewContainerViewController.swift; sourceTree = "<group>"; };
+		19635075226472C6008220A8 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		19635078226472C6008220A8 /* TabViewTabCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionView.swift; sourceTree = "<group>"; };
+		19635079226472C6008220A8 /* TabViewTabCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionViewLayout.swift; sourceTree = "<group>"; };
+		1963507B226472C6008220A8 /* NSLayoutConstraint+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Custom.swift"; sourceTree = "<group>"; };
+		1963507C226472C6008220A8 /* UIBarButtonItem+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+View.swift"; sourceTree = "<group>"; };
+		1963507E226472C6008220A8 /* NavigationItemObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemObserver.swift; sourceTree = "<group>"; };
+		1963507F226472C6008220A8 /* TabViewBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewBar.swift; sourceTree = "<group>"; };
+		19635080226472C6008220A8 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1963508A2264734D008220A8 /* SSHTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTabs.swift; sourceTree = "<group>"; };
+		1963508D22647B4E008220A8 /* ViewControllersAssembly+SSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllersAssembly+SSH.swift"; sourceTree = "<group>"; };
+		1963508F22647B7B008220A8 /* ViewControllersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersAssembly.swift; sourceTree = "<group>"; };
+		1963509222647BCF008220A8 /* StoryboardInitiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitiable.swift; sourceTree = "<group>"; };
+		1963509522647DBE008220A8 /* ConnectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionModel.swift; sourceTree = "<group>"; };
+		1963509722648188008220A8 /* ViewDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplayable.swift; sourceTree = "<group>"; };
 		1C8144BD4C8E5CE8CF245F18 /* Pods-NMSSHProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMSSHProject.debug.xcconfig"; path = "Target Support Files/Pods-NMSSHProject/Pods-NMSSHProject.debug.xcconfig"; sourceTree = "<group>"; };
 		35A631D3CE8812B467553C7D /* Pods-NMSSHTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMSSHTests.debug.xcconfig"; path = "Target Support Files/Pods-NMSSHTests/Pods-NMSSHTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4716229B2D709B9969218FF1 /* Pods_NMSSHProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMSSHProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +96,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B31B9D358A5A821CF5A7899 /* Pods_NMSSHProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19635049225E2E73008220A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				19634FF42254B0B4008220A8 /* NMSSH */,
+				1963504D225E2E73008220A8 /* NMSSHProjectTests */,
 				19634FF32254B0B4008220A8 /* Products */,
 				017F8D72289C1EC90E639908 /* Pods */,
 				906844694CC5E4A4A0255A43 /* Frameworks */,
@@ -83,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				19634FF22254B0B4008220A8 /* NMSSHProject.app */,
+				1963504C225E2E73008220A8 /* NMSSHProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +147,8 @@
 		19634FF42254B0B4008220A8 /* NMSSH */ = {
 			isa = PBXGroup;
 			children = (
+				1963508C22647B2F008220A8 /* Assembly */,
+				19635073226472C6008220A8 /* Sources */,
 				19635036225A25BD008220A8 /* Application */,
 				1963503B225A464C008220A8 /* Gateway */,
 				19635039225A261A008220A8 /* Scenes */,
@@ -111,8 +170,9 @@
 		19635035225A25B2008220A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				19634FF92254B0B4008220A8 /* Main.storyboard */,
+				19634FF92254B0B4008220A8 /* SSH.storyboard */,
 				19634FF72254B0B4008220A8 /* SSHViewController.swift */,
+				1963508A2264734D008220A8 /* SSHTabs.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +212,7 @@
 		1963503A225A2623008220A8 /* SSH */ = {
 			isa = PBXGroup;
 			children = (
+				1963509422647DB2008220A8 /* Model */,
 				19635035225A25B2008220A8 /* View */,
 				1963502E2259F88E008220A8 /* Presenter */,
 			);
@@ -169,6 +230,7 @@
 		1963503E225CA010008220A8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1963509122647BA0008220A8 /* Protocols */,
 				1963503F225CA018008220A8 /* Enums */,
 			);
 			path = Common;
@@ -181,6 +243,100 @@
 				19635043225CA043008220A8 /* Result.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		1963504D225E2E73008220A8 /* NMSSHProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				19635056225E2F0C008220A8 /* Helper */,
+				1963504E225E2E73008220A8 /* NMSSHProjectTests.swift */,
+				19635050225E2E73008220A8 /* Info.plist */,
+			);
+			path = NMSSHProjectTests;
+			sourceTree = "<group>";
+		};
+		19635056225E2F0C008220A8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				19635057225E2F26008220A8 /* Result.swift */,
+				19635059225E2F6F008220A8 /* NSError.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		19635073226472C6008220A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				19635074226472C6008220A8 /* TabViewContainerViewController.swift */,
+				19635075226472C6008220A8 /* TabViewController.swift */,
+				19635076226472C6008220A8 /* Internal */,
+				19635080226472C6008220A8 /* Theme.swift */,
+			);
+			name = Sources;
+			path = Path/To/TabView/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		19635076226472C6008220A8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				19635077226472C6008220A8 /* TabCollectionView */,
+				1963507A226472C6008220A8 /* Extension */,
+				1963507D226472C6008220A8 /* Util */,
+				1963507F226472C6008220A8 /* TabViewBar.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		19635077226472C6008220A8 /* TabCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				19635078226472C6008220A8 /* TabViewTabCollectionView.swift */,
+				19635079226472C6008220A8 /* TabViewTabCollectionViewLayout.swift */,
+			);
+			path = TabCollectionView;
+			sourceTree = "<group>";
+		};
+		1963507A226472C6008220A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1963507B226472C6008220A8 /* NSLayoutConstraint+Custom.swift */,
+				1963507C226472C6008220A8 /* UIBarButtonItem+View.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1963507D226472C6008220A8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1963507E226472C6008220A8 /* NavigationItemObserver.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1963508C22647B2F008220A8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1963508D22647B4E008220A8 /* ViewControllersAssembly+SSH.swift */,
+				1963508F22647B7B008220A8 /* ViewControllersAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1963509122647BA0008220A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1963509222647BCF008220A8 /* StoryboardInitiable.swift */,
+				1963509722648188008220A8 /* ViewDisplayable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1963509422647DB2008220A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1963509522647DBE008220A8 /* ConnectionModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		906844694CC5E4A4A0255A43 /* Frameworks */ = {
@@ -215,6 +371,24 @@
 			productReference = 19634FF22254B0B4008220A8 /* NMSSHProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1963504B225E2E73008220A8 /* NMSSHProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19635055225E2E73008220A8 /* Build configuration list for PBXNativeTarget "NMSSHProjectTests" */;
+			buildPhases = (
+				19635048225E2E73008220A8 /* Sources */,
+				19635049225E2E73008220A8 /* Frameworks */,
+				1963504A225E2E73008220A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19635052225E2E73008220A8 /* PBXTargetDependency */,
+			);
+			name = NMSSHProjectTests;
+			productName = NMSSHProjectTests;
+			productReference = 1963504C225E2E73008220A8 /* NMSSHProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,6 +401,10 @@
 				TargetAttributes = {
 					19634FF12254B0B4008220A8 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					1963504B225E2E73008220A8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 19634FF12254B0B4008220A8;
 					};
 				};
 			};
@@ -244,6 +422,7 @@
 			projectRoot = "";
 			targets = (
 				19634FF12254B0B4008220A8 /* NMSSHProject */,
+				1963504B225E2E73008220A8 /* NMSSHProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				19634FFD2254B0B6008220A8 /* Assets.xcassets in Resources */,
-				19634FFB2254B0B4008220A8 /* Main.storyboard in Resources */,
+				19634FFB2254B0B4008220A8 /* SSH.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1963504A225E2E73008220A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,24 +493,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1963508B2264734D008220A8 /* SSHTabs.swift in Sources */,
+				19635087226472C6008220A8 /* NavigationItemObserver.swift in Sources */,
+				1963509022647B7B008220A8 /* ViewControllersAssembly.swift in Sources */,
+				19635082226472C6008220A8 /* TabViewController.swift in Sources */,
+				1963509322647BCF008220A8 /* StoryboardInitiable.swift in Sources */,
+				1963509622647DBE008220A8 /* ConnectionModel.swift in Sources */,
 				19635044225CA043008220A8 /* Result.swift in Sources */,
+				19635081226472C6008220A8 /* TabViewContainerViewController.swift in Sources */,
+				19635083226472C6008220A8 /* TabViewTabCollectionView.swift in Sources */,
 				196350302259F8A4008220A8 /* SSHPresenter.swift in Sources */,
 				19634FF82254B0B4008220A8 /* SSHViewController.swift in Sources */,
 				19634FF62254B0B4008220A8 /* AppDelegate.swift in Sources */,
 				19635041225CA029008220A8 /* SSHError.swift in Sources */,
 				1963503D225A4662008220A8 /* SSHGateway.swift in Sources */,
+				19635086226472C6008220A8 /* UIBarButtonItem+View.swift in Sources */,
+				19635085226472C6008220A8 /* NSLayoutConstraint+Custom.swift in Sources */,
+				1963509822648188008220A8 /* ViewDisplayable.swift in Sources */,
+				19635089226472C6008220A8 /* Theme.swift in Sources */,
+				19635088226472C6008220A8 /* TabViewBar.swift in Sources */,
+				19635084226472C6008220A8 /* TabViewTabCollectionViewLayout.swift in Sources */,
+				1963508E22647B4E008220A8 /* ViewControllersAssembly+SSH.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19635048225E2E73008220A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19635058225E2F26008220A8 /* Result.swift in Sources */,
+				1963504F225E2E73008220A8 /* NMSSHProjectTests.swift in Sources */,
+				1963505A225E2F6F008220A8 /* NSError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		19635052225E2E73008220A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19634FF12254B0B4008220A8 /* NMSSHProject */;
+			targetProxy = 19635051225E2E73008220A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		19634FF92254B0B4008220A8 /* Main.storyboard */ = {
+		19634FF92254B0B4008220A8 /* SSH.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				19634FFA2254B0B4008220A8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SSH.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,6 +701,44 @@
 			};
 			name = Release;
 		};
+		19635053225E2E73008220A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NMSSHProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MobileNOC.NMSSHProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMSSHProject.app/NMSSHProject";
+			};
+			name = Debug;
+		};
+		19635054225E2E73008220A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NMSSHProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MobileNOC.NMSSHProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMSSHProject.app/NMSSHProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,6 +756,15 @@
 			buildConfigurations = (
 				1963501B2254B0B6008220A8 /* Debug */,
 				1963501C2254B0B6008220A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19635055225E2E73008220A8 /* Build configuration list for PBXNativeTarget "NMSSHProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19635053225E2E73008220A8 /* Debug */,
+				19635054225E2E73008220A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

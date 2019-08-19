@@ -1,0 +1,4 @@
+[submodule "Path/To/TabView"]
+	path = Path/To/TabView
+	url = https://github.com/IMcD23/TabView.git
+	branch = master
