@@ -46,7 +46,7 @@ extension SSHGatewayImplementation: SSHGateway {
     func connect(toHost: String, withUsername: String, byPassword: String, handler: @escaping (Result<Void>) -> ()) {
         sshQueue.async(execute: { [weak self] in
             guard let self = self else { return }
-            let session = NMSSHSession.connect(toHost: toHost, withUsername: withUsername)
+            let session = NMSSHSession.connect(toHost: toHost, port: 22, withUsername: withUsername)
             self.session = session
             if session.isConnected {
                 session.authenticate(byPassword: byPassword)
