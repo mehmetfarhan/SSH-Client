@@ -18,21 +18,21 @@
 		1963504F225E2E73008220A8 /* NMSSHProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963504E225E2E73008220A8 /* NMSSHProjectTests.swift */; };
 		19635058225E2F26008220A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635057225E2F26008220A8 /* Result.swift */; };
 		1963505A225E2F6F008220A8 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635059225E2F6F008220A8 /* NSError.swift */; };
-		19635081226472C6008220A8 /* TabViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635074226472C6008220A8 /* TabViewContainerViewController.swift */; };
-		19635082226472C6008220A8 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635075226472C6008220A8 /* TabViewController.swift */; };
-		19635083226472C6008220A8 /* TabViewTabCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635078226472C6008220A8 /* TabViewTabCollectionView.swift */; };
-		19635084226472C6008220A8 /* TabViewTabCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635079226472C6008220A8 /* TabViewTabCollectionViewLayout.swift */; };
-		19635085226472C6008220A8 /* NSLayoutConstraint+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507B226472C6008220A8 /* NSLayoutConstraint+Custom.swift */; };
-		19635086226472C6008220A8 /* UIBarButtonItem+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507C226472C6008220A8 /* UIBarButtonItem+View.swift */; };
-		19635087226472C6008220A8 /* NavigationItemObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507E226472C6008220A8 /* NavigationItemObserver.swift */; };
-		19635088226472C6008220A8 /* TabViewBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963507F226472C6008220A8 /* TabViewBar.swift */; };
-		19635089226472C6008220A8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19635080226472C6008220A8 /* Theme.swift */; };
 		1963508B2264734D008220A8 /* SSHTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963508A2264734D008220A8 /* SSHTabs.swift */; };
 		1963508E22647B4E008220A8 /* ViewControllersAssembly+SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963508D22647B4E008220A8 /* ViewControllersAssembly+SSH.swift */; };
 		1963509022647B7B008220A8 /* ViewControllersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963508F22647B7B008220A8 /* ViewControllersAssembly.swift */; };
 		1963509322647BCF008220A8 /* StoryboardInitiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963509222647BCF008220A8 /* StoryboardInitiable.swift */; };
 		1963509622647DBE008220A8 /* ConnectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963509522647DBE008220A8 /* ConnectionModel.swift */; };
 		1963509822648188008220A8 /* ViewDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963509722648188008220A8 /* ViewDisplayable.swift */; };
+		19A70AFA230A94E10068DDEA /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AED230A94E10068DDEA /* TabViewController.swift */; };
+		19A70AFB230A94E10068DDEA /* TabViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AEE230A94E10068DDEA /* TabViewContainerViewController.swift */; };
+		19A70AFC230A94E10068DDEA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AEF230A94E10068DDEA /* Theme.swift */; };
+		19A70AFD230A94E10068DDEA /* TabViewTabCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AF2230A94E10068DDEA /* TabViewTabCollectionView.swift */; };
+		19A70AFE230A94E10068DDEA /* TabViewTabCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AF3230A94E10068DDEA /* TabViewTabCollectionViewLayout.swift */; };
+		19A70AFF230A94E10068DDEA /* NSLayoutConstraint+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AF5230A94E10068DDEA /* NSLayoutConstraint+Custom.swift */; };
+		19A70B00230A94E10068DDEA /* UIBarButtonItem+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AF6230A94E10068DDEA /* UIBarButtonItem+View.swift */; };
+		19A70B01230A94E10068DDEA /* NavigationItemObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AF8230A94E10068DDEA /* NavigationItemObserver.swift */; };
+		19A70B02230A94E10068DDEA /* TabViewBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A70AF9230A94E10068DDEA /* TabViewBar.swift */; };
 		1B31B9D358A5A821CF5A7899 /* Pods_NMSSHProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4716229B2D709B9969218FF1 /* Pods_NMSSHProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,21 +63,21 @@
 		19635050225E2E73008220A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19635057225E2F26008220A8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		19635059225E2F6F008220A8 /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
-		19635074226472C6008220A8 /* TabViewContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewContainerViewController.swift; sourceTree = "<group>"; };
-		19635075226472C6008220A8 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		19635078226472C6008220A8 /* TabViewTabCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionView.swift; sourceTree = "<group>"; };
-		19635079226472C6008220A8 /* TabViewTabCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionViewLayout.swift; sourceTree = "<group>"; };
-		1963507B226472C6008220A8 /* NSLayoutConstraint+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Custom.swift"; sourceTree = "<group>"; };
-		1963507C226472C6008220A8 /* UIBarButtonItem+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+View.swift"; sourceTree = "<group>"; };
-		1963507E226472C6008220A8 /* NavigationItemObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemObserver.swift; sourceTree = "<group>"; };
-		1963507F226472C6008220A8 /* TabViewBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewBar.swift; sourceTree = "<group>"; };
-		19635080226472C6008220A8 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1963508A2264734D008220A8 /* SSHTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTabs.swift; sourceTree = "<group>"; };
 		1963508D22647B4E008220A8 /* ViewControllersAssembly+SSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllersAssembly+SSH.swift"; sourceTree = "<group>"; };
 		1963508F22647B7B008220A8 /* ViewControllersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersAssembly.swift; sourceTree = "<group>"; };
 		1963509222647BCF008220A8 /* StoryboardInitiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitiable.swift; sourceTree = "<group>"; };
 		1963509522647DBE008220A8 /* ConnectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionModel.swift; sourceTree = "<group>"; };
 		1963509722648188008220A8 /* ViewDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplayable.swift; sourceTree = "<group>"; };
+		19A70AED230A94E10068DDEA /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		19A70AEE230A94E10068DDEA /* TabViewContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewContainerViewController.swift; sourceTree = "<group>"; };
+		19A70AEF230A94E10068DDEA /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		19A70AF2230A94E10068DDEA /* TabViewTabCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionView.swift; sourceTree = "<group>"; };
+		19A70AF3230A94E10068DDEA /* TabViewTabCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewTabCollectionViewLayout.swift; sourceTree = "<group>"; };
+		19A70AF5230A94E10068DDEA /* NSLayoutConstraint+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Custom.swift"; sourceTree = "<group>"; };
+		19A70AF6230A94E10068DDEA /* UIBarButtonItem+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+View.swift"; sourceTree = "<group>"; };
+		19A70AF8230A94E10068DDEA /* NavigationItemObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemObserver.swift; sourceTree = "<group>"; };
+		19A70AF9230A94E10068DDEA /* TabViewBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewBar.swift; sourceTree = "<group>"; };
 		1C8144BD4C8E5CE8CF245F18 /* Pods-NMSSHProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMSSHProject.debug.xcconfig"; path = "Target Support Files/Pods-NMSSHProject/Pods-NMSSHProject.debug.xcconfig"; sourceTree = "<group>"; };
 		35A631D3CE8812B467553C7D /* Pods-NMSSHTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMSSHTests.debug.xcconfig"; path = "Target Support Files/Pods-NMSSHTests/Pods-NMSSHTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4716229B2D709B9969218FF1 /* Pods_NMSSHProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMSSHProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,8 +147,8 @@
 		19634FF42254B0B4008220A8 /* NMSSH */ = {
 			isa = PBXGroup;
 			children = (
+				19A70AEC230A94D10068DDEA /* Sources */,
 				1963508C22647B2F008220A8 /* Assembly */,
-				19635073226472C6008220A8 /* Sources */,
 				19635036225A25BD008220A8 /* Application */,
 				1963503B225A464C008220A8 /* Gateway */,
 				19635039225A261A008220A8 /* Scenes */,
@@ -264,55 +264,6 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		19635073226472C6008220A8 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				19635074226472C6008220A8 /* TabViewContainerViewController.swift */,
-				19635075226472C6008220A8 /* TabViewController.swift */,
-				19635076226472C6008220A8 /* Internal */,
-				19635080226472C6008220A8 /* Theme.swift */,
-			);
-			name = Sources;
-			path = Path/To/TabView/Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		19635076226472C6008220A8 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				19635077226472C6008220A8 /* TabCollectionView */,
-				1963507A226472C6008220A8 /* Extension */,
-				1963507D226472C6008220A8 /* Util */,
-				1963507F226472C6008220A8 /* TabViewBar.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		19635077226472C6008220A8 /* TabCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				19635078226472C6008220A8 /* TabViewTabCollectionView.swift */,
-				19635079226472C6008220A8 /* TabViewTabCollectionViewLayout.swift */,
-			);
-			path = TabCollectionView;
-			sourceTree = "<group>";
-		};
-		1963507A226472C6008220A8 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				1963507B226472C6008220A8 /* NSLayoutConstraint+Custom.swift */,
-				1963507C226472C6008220A8 /* UIBarButtonItem+View.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		1963507D226472C6008220A8 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				1963507E226472C6008220A8 /* NavigationItemObserver.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		1963508C22647B2F008220A8 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +288,54 @@
 				1963509522647DBE008220A8 /* ConnectionModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		19A70AEC230A94D10068DDEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				19A70AF0230A94E10068DDEA /* Internal */,
+				19A70AEE230A94E10068DDEA /* TabViewContainerViewController.swift */,
+				19A70AED230A94E10068DDEA /* TabViewController.swift */,
+				19A70AEF230A94E10068DDEA /* Theme.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		19A70AF0230A94E10068DDEA /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				19A70AF1230A94E10068DDEA /* TabCollectionView */,
+				19A70AF4230A94E10068DDEA /* Extension */,
+				19A70AF7230A94E10068DDEA /* Util */,
+				19A70AF9230A94E10068DDEA /* TabViewBar.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		19A70AF1230A94E10068DDEA /* TabCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				19A70AF2230A94E10068DDEA /* TabViewTabCollectionView.swift */,
+				19A70AF3230A94E10068DDEA /* TabViewTabCollectionViewLayout.swift */,
+			);
+			path = TabCollectionView;
+			sourceTree = "<group>";
+		};
+		19A70AF4230A94E10068DDEA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19A70AF5230A94E10068DDEA /* NSLayoutConstraint+Custom.swift */,
+				19A70AF6230A94E10068DDEA /* UIBarButtonItem+View.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		19A70AF7230A94E10068DDEA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				19A70AF8230A94E10068DDEA /* NavigationItemObserver.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		906844694CC5E4A4A0255A43 /* Frameworks */ = {
@@ -494,25 +493,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1963508B2264734D008220A8 /* SSHTabs.swift in Sources */,
-				19635087226472C6008220A8 /* NavigationItemObserver.swift in Sources */,
+				19A70AFB230A94E10068DDEA /* TabViewContainerViewController.swift in Sources */,
 				1963509022647B7B008220A8 /* ViewControllersAssembly.swift in Sources */,
-				19635082226472C6008220A8 /* TabViewController.swift in Sources */,
 				1963509322647BCF008220A8 /* StoryboardInitiable.swift in Sources */,
 				1963509622647DBE008220A8 /* ConnectionModel.swift in Sources */,
+				19A70B02230A94E10068DDEA /* TabViewBar.swift in Sources */,
+				19A70AFA230A94E10068DDEA /* TabViewController.swift in Sources */,
+				19A70B01230A94E10068DDEA /* NavigationItemObserver.swift in Sources */,
 				19635044225CA043008220A8 /* Result.swift in Sources */,
-				19635081226472C6008220A8 /* TabViewContainerViewController.swift in Sources */,
-				19635083226472C6008220A8 /* TabViewTabCollectionView.swift in Sources */,
+				19A70B00230A94E10068DDEA /* UIBarButtonItem+View.swift in Sources */,
 				196350302259F8A4008220A8 /* SSHPresenter.swift in Sources */,
 				19634FF82254B0B4008220A8 /* SSHViewController.swift in Sources */,
+				19A70AFD230A94E10068DDEA /* TabViewTabCollectionView.swift in Sources */,
 				19634FF62254B0B4008220A8 /* AppDelegate.swift in Sources */,
 				19635041225CA029008220A8 /* SSHError.swift in Sources */,
+				19A70AFE230A94E10068DDEA /* TabViewTabCollectionViewLayout.swift in Sources */,
 				1963503D225A4662008220A8 /* SSHGateway.swift in Sources */,
-				19635086226472C6008220A8 /* UIBarButtonItem+View.swift in Sources */,
-				19635085226472C6008220A8 /* NSLayoutConstraint+Custom.swift in Sources */,
+				19A70AFC230A94E10068DDEA /* Theme.swift in Sources */,
 				1963509822648188008220A8 /* ViewDisplayable.swift in Sources */,
-				19635089226472C6008220A8 /* Theme.swift in Sources */,
-				19635088226472C6008220A8 /* TabViewBar.swift in Sources */,
-				19635084226472C6008220A8 /* TabViewTabCollectionViewLayout.swift in Sources */,
+				19A70AFF230A94E10068DDEA /* NSLayoutConstraint+Custom.swift in Sources */,
 				1963508E22647B4E008220A8 /* ViewControllersAssembly+SSH.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
